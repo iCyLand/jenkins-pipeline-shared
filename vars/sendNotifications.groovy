@@ -28,7 +28,7 @@ def call(String buildStatus = 'STARTED') {
   }
 
   // Send notifications
-  slackSend (color: colorCode, message: summary)
+  slackSend (color: colorCode, message: summary, channel: #jenkins-notification)
 
   //hipchatSend (color: color, notify: true, message: summary)
 
